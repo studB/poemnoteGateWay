@@ -14,7 +14,5 @@ COPY --from=builder app/application/ ./
 
 EXPOSE 8000
 
-ARG DB_LOCATION
-
 ENTRYPOINT ["java", "org.springframework.boot.loader.JarLauncher"]
-CMD ["--service.host=192.168.35.246"]
+CMD ["--service.host=poemnote"]
